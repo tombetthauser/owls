@@ -75,8 +75,11 @@ alert("I appologize if that didn't make much sense, thank you for hearing me out
 alert("\(loading, please wait\)");
 alert("Sorry " + name + ", this is getting a little out-there isn't it. We should change the subject.");
 alert(nameTwo + "'s a pretty cool last name, I bet people say that to you all the time.");
-alert("In any case none of this was relevant, I was just curious " + name + ". Sorry about that, I get kind of lonely here sometimes.");
-alert("I bet I wouldn't get so lonely if I was going to live for another " + secondsLeft + " seconds and I had a cool last name like " + nameTwo + ".");
+alert("That's " + nameTwo.length + " letters of fun!");
+alert("As opposed to your first name, which is " + name.length + " of sheer terror!");
+alert("Just kidding, sorry about that. I have a tendancy to get a little carried away with things...");
+alert("In any case none of this was super relevant, I just get kind of lonely here sometimes.");
+alert("I bet I wouldn't get so lonely if I was going to live for another " + hoursLeft + " hours and I had a cool last name like " + nameTwo + ".");
 
 
 
