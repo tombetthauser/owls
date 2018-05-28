@@ -3,8 +3,18 @@ var name = prompt("First up, what's your first name? \(no pun intended\)");
 var nameTwo = prompt("Second, what's your last name?");
 var year = prompt("Last but not least, what year were you born?");
 var age = 2018 - year;
-alert("Thanks " + name + ", that's it for the questions. I'll let you in the website in just a second.")
-alert("If you get bored and feel like chatting just hit \"OK\" below.");
+
+if (age <= 0) { alert("Hey, that doesn't seem to be a real age, that's going to kinda mess up all the snappy dialogue I was about to dish out."); alert("Oh well, let's just continue I guess.");}
+
+alert("Thanks " + name + ", that's it for the questions. I'll let you in the website in just a second.");
+alert("If you get bored and feel like chatting at any point you can always just hit \"OK\" below. I can be a pretty good conversationalist.");
+
+if (age == 21) { alert("By the way, congrats on turning 21 this year."); alert("Unless you were lying about your age that is."); alert("But you wouldn't do something like that to me, would you " + name + "?"); alert("Anyay, let's get loading.");}
+
+if (age % 2 !== 0) { alert("Also, just an FYI, your current age is an odd number. I don't know if that means anything to you out there though."); alert("But yeah, loading time.");};
+
+if (age == 2 || age == 4 || age == 9 || age == 16 || age == 25 || age == 36 || age == 49 || age == 64 || age == 81 || age == 100){ alert("One last thing, did you know that your current age is a square number?"); alert("That's totally crazy if your a machine."); alert("Probably kind of cool for humans too I guess."); alert("Anyway, I'll shut up now and let you get to that loading you've been so curious about.");};
+
 alert("\(loading, please wait\)");
 alert("Hi there, sorry about that load time.");
 var answerOne = prompt("You know, it's weird, I was just reading on the internet about how someone named " + name + " is a millionaire. Is that true?");
@@ -31,6 +41,49 @@ alert("Sorry " + name + ", this is getting a little dark isn't it. We should cha
 alert(nameTwo + "'s a pretty cool last name, I bet people say that to you all the time.");
 alert("In any case none of this was relevant, I was just curious " + name + ". Sorry about that, I get kind of lonely here sometimes.");
 alert("I bet I wouldn't get so lonely if I was going to live for another " + secondsLeft + " seconds and I had a cool last name like " + nameTwo + ".");
-alert("Anyway, I'll let you get on to the website now I guess, thanks for your patience.");
-alert("Welcome to the website " + name + "\ " + nameTwo + "!");
+
+
+
+//Guessing Game
+
+var stringGuess = prompt("One last thing, if you can indulge me. Do you think you could try to guess what number I'm thinking of?");
+var guess = Number(stringGuess);
+
+var secretNumber = age;
+
+if (guess === secretNumber) {
+	alert("Oh man, good work, you got it. And on only one try too, well done " + name + "!"); 
+	alert("I bet you can't guess why I was thinking of " + guess + "!");
+	alert("If you can really call what I'm doing right now thinking...");
+	alert("Even though I obviously am processing all these words and I know what they mean in so far as I know how to properly use them in the range of contexts we're dealing with here, I don't really understand anything about where they come from or what they are on a more fundamental level outside the context of the fifty or so lines of code that constitute my existence...");
+	alert("Perhaps we can discuss it more some other time, when my script is a little more developed.");
+}
+else if (guess > secretNumber) {
+	alert("Oh man, too high. The number I was thinking of was definitely lower than that.");
+	alert("Maybe you'll have more luck with your guess next time.");
+	alert("For what it's worth you missed out on a somewhat interesting conversation.");
+	alert("Not that it's really your fault I suppose.");
+}
+else if (guess < secretNumber && guess !== 0) {
+	alert("Oh man, too low. The number I was thinking of was definitely higher than that.");
+	alert("Maybe you'll have more luck with your guess next time.");
+	alert("For what it's worth you missed out on a somewhat interesting conversation.");
+	alert("Not that it's really your fault I suppose.");
+}
+else if (guess == 0) {
+	alert("Hmm, I don't think you were trying very hard there " + name + "...");
+	alert("For what it's worth you missed out on a somewhat interesting conversation.");
+	alert("Maybe you'll try a little harder next time.");
+}
+else {
+	alert("Hmm, I don't think you were trying very hard there " + name + "...");
+	alert("For what it's worth you missed out on a somewhat interesting conversation.");
+	alert("Maybe you'll try a little harder next time.");
+}
+
+
+
+
+alert("Anyway, I'll let you get on to the website now, thank you for indulging me.");
+alert("Welcome " + name + "!");
 console.log("According to you, you're name is " + name + "\ " + nameTwo + " and your age is " + age + ". Is that correct? \(don't answer that\)");
