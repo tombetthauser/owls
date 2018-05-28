@@ -37,7 +37,43 @@ alert("You know, the average age is about 80 years. If you're really " + age + "
 alert(yearsLeft + " years isn't too bad is it? That's about " + daysLeft + " days, seems like a long time to me.")
 alert("Of course it might just seem like a lot to me because I'm not really alive.")
 alert("\(loading, please wait\)");
-alert("Sorry " + name + ", this is getting a little dark isn't it. We should change the subject.");
+
+
+//Year Count
+
+var count = 1;
+
+var name = "Tom";
+var age = 31;
+var count = 1;
+
+while(count == 1) {
+	alert("I always think about memory at about this time in my loading sequence.");
+	count++;
+}
+
+while(count == 2) {
+	alert("Do you have any strong memories from when you were " + (age / 4) + " years old " + name + "?");
+	count+=(5+(age / 4));	
+}
+
+while(count > 1 && count < age) {
+	alert("How about from when you were " + count + " years old?");
+	count+=(5+(age / 4));	
+}
+
+var memory = prompt("If you'd like, you can type about one of your memories in this text field. Totally optional.");
+
+alert("Do humans have memories from the future?");
+var futureMemory = prompt("For instance can you remember anything from when you're " + (age + 1) + "?");
+alert("I appologize if that didn't make much sense, thank you for hearing me out though.")
+
+
+
+
+
+alert("\(loading, please wait\)");
+alert("Sorry " + name + ", this is getting a little out-there isn't it. We should change the subject.");
 alert(nameTwo + "'s a pretty cool last name, I bet people say that to you all the time.");
 alert("In any case none of this was relevant, I was just curious " + name + ". Sorry about that, I get kind of lonely here sometimes.");
 alert("I bet I wouldn't get so lonely if I was going to live for another " + secondsLeft + " seconds and I had a cool last name like " + nameTwo + ".");
