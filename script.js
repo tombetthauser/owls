@@ -1,10 +1,46 @@
 alert("Hi there. I'm the website, before I let you in I have a couple of basic questions to ask.");
 var name = prompt("First up, what's your first name? \(no pun intended\)");
+
+if(name > 1) {
+	alert("Seems like you aren't taking this seriously enough " + "\"" + name + ".\" Let's try that again.");
+	var name = prompt("What's your actual first name?");
+}
+
+if(name > 1) {
+	alert("Fine, whatever " + "\"" + name + ".\" I'll just assume your real name is George.");
+	alert("Let's just move on.")
+	var name = "George";
+}
+
 var nameTwo = prompt("Second, what's your last name?");
+
+if(nameTwo > 1) {
+	alert("So you're saying your name is " + "\"" + name + "\ " + nameTwo + "?\" Seriously? Let's try that again.");
+	var nameTwo = prompt("What's your actual last name?");
+}
+
+if(nameTwo > 1) {
+	alert("Ok, whatever " + "\"" + name + "\ " + nameTwo + ".\" I'll just assume your real last name is Buttonwillow.");
+	alert("Let's keep this moving shall we " + name + "?");
+	var nameTwo = "Buttonwillow";
+}
+
 var year = prompt("Last but not least, what year were you born?");
+
 var age = 2018 - year;
 
-if (age <= 0) { alert("Hey, that doesn't seem to be a real age, that's going to kinda mess up all the snappy dialogue I was about to dish out."); alert("Oh well, let's just continue I guess.");}
+if(year > 2015 || year < 1940) {
+	alert("Really? That would make you " + age + " years old.");
+	alert("Does that make any sense to you? Let's try this again.");
+	var year = prompt("What year were you actually born?");
+}
+
+while(year > 2015 || year < 1940) {
+	alert("No, that's not gonna work for me either.");
+	var year = prompt("What year were you actually born in?");
+}
+
+var age = 2018 - year;
 
 alert("Thanks " + name + ", that's it for the questions. I'll let you in the website in just a second.");
 alert("If you get bored and feel like chatting at any point you can always just hit \"OK\" below. I can be a pretty good conversationalist.");
