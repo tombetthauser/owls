@@ -162,3 +162,8 @@ else {
 alert("Anyway, I'll let you get on to the website now, thank you for indulging me.");
 alert("Welcome " + name + "!");
 console.log("According to you, you're name is " + name + "\ " + nameTwo + " and your age is " + age + ". Is that correct? \(don't answer that\)");
+
+setInterval(function(){
+	alert("Hello! It's been about 15 minutes. Just thought you'd like to know.");
+}
+, 900000);
